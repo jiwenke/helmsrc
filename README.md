@@ -1,2 +1,2 @@
 # helmsrc
-test the helm and argo
+test the helm and argo, add push
