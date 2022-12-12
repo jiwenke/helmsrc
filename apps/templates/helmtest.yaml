@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helmtest 
+  namespace: default
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  project: default
+  source:
+    chart: hemltest
+    helm:
+      values: |
+        pushgateway:
+          enabled: false
+    repoURL: https://jiwenke.github.io/helmsrc
+    targetRevision: 15.6.0
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
