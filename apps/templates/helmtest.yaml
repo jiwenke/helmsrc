@@ -14,7 +14,7 @@ spec:
     chart: helloworld
     helm:
       releaseName: hellorel001
-      repoURL: https://jiwenke.github.io/helmsrc
+    repoURL: https://jiwenke.github.io/helmsrc
     targetRevision: 15.6.0
   syncPolicy:
     automated:
