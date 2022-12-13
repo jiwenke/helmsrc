@@ -11,12 +11,10 @@ spec:
     namespace: default
   project: default
   source:
-    chart: hemltest
+    chart: helloworld
     helm:
-      values: |
-        pushgateway:
-          enabled: false
-    repoURL: https://jiwenke.github.io/helmsrc
+      releaseName: hellorel001
+      repoURL: https://jiwenke.github.io/helmsrc
     targetRevision: 15.6.0
   syncPolicy:
     automated:
