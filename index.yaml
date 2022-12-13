@@ -9,6 +9,6 @@ entries:
     name: helloworld
     type: application
     urls:
-    - https://github.com/jiwenke/helmsrc/helloworld-0.1.0.tgz
+    - https://jiwenke.github.com/helmsrc/helloworld-0.1.0.tgz
     version: 0.1.0
 generated: "2022-12-09T12:59:13.236090571Z"
